@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chatBox">
+            <div class="containerRespondse"><img src="./AI_pic.png" class="AIPic"><div class="messenge AI-messenge">Hello</div></div>
+            <div class="containerRespondse"><img src="./user_pic.png" class="userPic"><div class="messenge human-messenge">Hello</div></div>
+        </div>
+        <div class="inputBox">
+            <textarea class="inputElement" placeholder="Bạn muốn hỏi gì?"></textarea>
+            <button class="butSend" onclick="sendMessage()">send</button>
+        </div>
+        <button onclick="showMessage()">show</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

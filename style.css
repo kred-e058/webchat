@@ -1,0 +1,67 @@
+html{
+    margin:0;
+    padding:0;
+}
+.container{
+    position: relative;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding:15px;
+    margin: 60px 5%;
+    height: auto;
+    padding-bottom: 100px;;
+}
+.containerRespondse{
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.messenge{
+    padding-left: 10px;
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    background-color: white;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.AI-messenge{
+    background-color: rgb(132, 132, 151);
+}
+.AIPic{
+    border-radius: 1000px;
+    width: 35px;
+    height:35px;
+}
+.userPic{
+    border-radius: 1000px;
+    width:34px;
+    height:35px;
+}
+.inputBox{
+    display: block;
+    
+    width: 85%;
+    /* border: 1px solid black; */
+    position: fixed;
+    bottom: 10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.inputElement{
+    resize: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 80%;
+    max-width: 500px;
+    min-height: 50px;
+    max-height: 175px;
+    border:0px;
+}
+.butSend{
+    position:absolute;
+    bottom:8px;
+    border-radius: 50px;
+    cursor:pointer;
+    padding:10px;
+}
