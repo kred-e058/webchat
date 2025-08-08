@@ -71,7 +71,8 @@ async function callAPI(){
 
     console.log(respondse);
 }
-callAPI();
+await callAPI();
+
 
 
 
