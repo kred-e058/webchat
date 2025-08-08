@@ -48,5 +48,25 @@ function showMessage(){
     container.appendChild(containerRespondse);
 }
 
+const respondse = fetch("https://openrouter.ai/api/v1/chat/completions", {
+    method: "POST",
+    headers: {
+        "Authorization": "Bearer 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",
+        "HTTP-Referer": "https://kred-e058.github.io/webchat/", // Optional. Site URL for rankings on openrouter.ai.
+        "X-Title": "Document", // Optional. Site title for rankings on openrouter.ai.
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        "model": "openai/gpt-oss-20b:free",
+        "messages": [
+        {
+            "role": "user",
+            "content": "What is the meaning of life?"
+        }
+        ]
+    })
+});
+
+console.log(respondse);
 
 
