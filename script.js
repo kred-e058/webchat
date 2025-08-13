@@ -55,7 +55,7 @@ async function sendandre(userMess){
         const respondse = await fetch('http://localhost:3000/chat',{
             method:"POST",
             headers:{"Content-Type":"application/json",
-                "Access-Control-Allow-Origin": "http://127.0.0.1:5500"
+                "Access-Control-Allow-Origin": "https://kred-e058.github.io/webchat/"
             },
             body:JSON.stringify({
                 message: userMess
@@ -72,3 +72,4 @@ async function sendandre(userMess){
 }
 
 // sendandre('hello i am phi');
+
